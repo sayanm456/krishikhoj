@@ -1,0 +1,33 @@
+{% extends "krishikhojapp/index.html" %}
+
+{% block content %}
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+       <tr>
+         <td>Farmer's Name</td>
+         <td>Address</td>
+         <td>Contact No</td>
+         <td>Tractor Model</td>
+         <td>Price</td>
+         <td>
+           <button type="button" class="btn btn-outline-success btn-block btn-sm mx-2 my-2">
+             <a href="{% url 'farmer_insert' %}" ><i class="fas fa-plus"></i> Add New</a>
+           </button>
+            <!-- <button class="btn btn-outline-success mx-3 my-3">
+            </button> -->
+         </td>
+       </tr>
+    </thead>
+    <tbody>
+        {% for i in tractor_list %}
+           <tr>
+             <td>{{i.name}}</td>
+             <td>{{i.address}}</td>
+             <td>{{i.contact_no}}</td>
+             <td>{{i.tractor_name}}</td>
+             <td>{{i.price}}</td>
+           </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
