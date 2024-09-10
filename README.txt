@@ -1,5 +1,6 @@
-﻿
-Krishikhoj App - A Django app for registration of Farmers and Tractors details of the The Fatmers
+﻿# Krishikhoj App 
+
+## A Django app for registration of Farmers and Tractors details of the The Fatmers
 
 This is a Django App in aDjango Project in same name.
 At First, A Welcome page are shown in the first page anwith along a button "Go To App".
